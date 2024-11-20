@@ -1,14 +1,14 @@
 /***********FOR ALL PAGES***********/
 body {
     background-color: brown;
-    margin: auto;
-    width: 100%;
+    margin: 0;
 }
 
 header {
+    width: 100%;
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 header img {
@@ -23,8 +23,6 @@ nav ul {
     justify-content: center;
     background-color: gray;
     padding: 20px;
-    width: 100%;
-    overflow: auto;
 }
 
 
@@ -45,12 +43,88 @@ footer {
     text-align: center;
     background-color: gray;
     width: 100%;
-    padding: 5px;
+    margin: auto;
     color: white;
+    font-size: large;
+    font-weight: bold;
     position: absolute;
-    bottom: 0;
 }
 
-div {
+/********Index Page********/
+#h2Home {
+    text-align: center;
+}
+
+#indexMain {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    align-items: stretch;
+}
+
+#indexLeft {
+    width: 75%;
+    margin: auto;
+    padding: 15px;
+    text-align: justify;
+}
+
+#indexLeft img {
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+#indexRight {
+    width: 25%;
+    margin: 0;
+    padding: 15px;
+}
+
+#newsletterForm {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+}
+
+#newsletterForm input[type="text"] {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+#newsletterRadio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+#newsletterForm input[type="submit"] {
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+}
+
+#newsletterForm input[type="submit"]:hover {
+    background-color: white;
+    color: brown;
+}
+
+#newsletterForm h2,
+p {
     text-align: center;
 }

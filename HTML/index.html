@@ -31,11 +31,35 @@
         </ul>
     </nav>
 
-    <main>
-        <div>
-            <h1>Welcome to Mt. Olympus!</h1>
-        </div>
+    <h2 id="h2Home">Welcome to the Official Mt. Olympus Website!</h2>
+    <main id="indexMain">
+        <section id="indexLeft">
+            <img src="../Images/mount_olympus_home.png" alt="Mount Olympus">
+            <p>
+                Welcome to Mount Olympus, the legendary peak where history, mythology, and adventure converge!
+                As the fabled home of the ancient Greek gods, Mount Olympus offers a journey through rich history,
+                captivating mythology, and awe-inspiring natural beauty. Explore breathtaking hiking trails, rent
+                top-tier gear with our equipment, and uncover tailored tips in our travel and tourism section.
+                Whether you're seeking a cozy retreat at our charming lodges, looking for local events, or planning
+                your dream trip, Mount Olympus has something for everyone. Ready to embark on this mythical adventure?
+                Check out our contact page for assistance or our FAQs for quick answers!
+            </p>
+        </section>
+        <section id="indexRight">
+            <form action="" onsubmit="submitNewsletter(event)" id="newsletterForm">
+                <h2>Join Our Newsletter!</h2>
+                <input type="text" id="email" placeholder="Enter your email">
+                <input type="text" id="phone" placeholder="Enter your phone number">
+                <p>Do you want to receive SMS text messages?</p>
+                <div id="newsletterRadio">
+                    <label>Yes <input type="radio" name="decision" id="yes" value="yes"></label>
+                    <label>No <input type="radio" name="decision" id="no" value="no" checked></label>
+                </div>
+                <input type="submit" name="" id="" value="Submit">
+            </form>
+        </section>
     </main>
+    <script src="../JS/index.js"></script>
 
     <footer>
         <p>Designed and Developed by Anthony Micco ©2024</p>
