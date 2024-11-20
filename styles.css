@@ -67,6 +67,8 @@ footer {
     margin: auto;
     padding: 15px;
     text-align: justify;
+    font-size: larger;
+    color: white;
 }
 
 #indexLeft img {
