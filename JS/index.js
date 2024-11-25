@@ -28,3 +28,36 @@ function submitNewsletter(e) {
 }
 
 /*****EQUIPMENT PAGE JS*****/
+
+function submitRentalRequest(e) {
+    e.preventDefault();
+
+    let fullName = document.getElementById("fname").value + "" + document.getElementById("lname").value;
+    let rentals = document.getElementsByName("item");
+    let selectedRental = [];
+
+    for (let i = 0; i < rentals.length; i++) {
+        if (rentals[i].checked) {
+            selectedRental.push(rentals[i].value)
+        }
+    }
+
+    let sizes = document.getElementById("sizes").value;
+    let start = document.getElementById("start").value;
+    let end = document.getElementById("end").value;
+    let email = document.getElementById("email").value;
+
+    if (fullName != "" && rentals != "" && sizes != "" && start != "" && end != "" && email !== "") {
+        alert("Form submitted successfully! Your items are reserved!")
+        document.getElementById("fname").value = "";
+        document.getElementById("lname").value = "";
+        document.getElementById("sizes").value = "";
+        document.getElementById("start").value = "";
+        document.getElementById("end").value = "";
+        document.getElementById("email").value = "";
+        document.getElementsByName("item").checked = false
+
+    } else {
+        alert("Error! Please fill out all form items!")
+    }
+}
