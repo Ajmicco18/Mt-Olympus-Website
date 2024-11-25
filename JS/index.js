@@ -1,3 +1,4 @@
+/*****HOME PAGE JS*****/
 function submitNewsletter(e) {
     e.preventDefault();
 
@@ -25,3 +26,5 @@ function submitNewsletter(e) {
         alert("Error in submission! Please try again!")
     }
 }
+
+/*****EQUIPMENT PAGE JS*****/

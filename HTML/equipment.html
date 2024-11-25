@@ -5,7 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
-    <title>Equipment Rentals</title>
+    <title>Equipment</title>
+    <style>
+        main {
+            display: flex;
+            width: 85%;
+            margin: auto;
+            align-items: stretch;
+        }
+
+        #left {
+            margin: auto;
+            width: 65%;
+            padding: 15px;
+            color: white;
+            font-size: large;
+
+        }
+
+        table {
+            width: 85%;
+            margin: auto;
+            border: 2px solid black;
+            border-collapse: collapse;
+            background-color: gray;
+            color: white;
+        }
+
+        th {
+            font-size: larger;
+            font-weight: bold;
+            padding: 10px;
+            color: black;
+        }
+
+        #headers {
+            font-weight: bold;
+        }
+
+        td {
+            padding: 10px;
+            font-size: medium;
+            text-align: center;
+        }
+
+        #rentals:hover {
+            background-color: brown;
+        }
+
+        #purchase:hover {
+            background-color: lightgray;
+        }
+
+        #right {
+            width: 35%;
+            margin: 0;
+            padding: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +78,7 @@
             <li><a href="history.html">History</a></li>
             <li><a href="mythology.html">Mythology</a></li>
             <li><a href="hiking.html">Hiking/Trails</a></li>
-            <li><a href="equipment.html">Equipment Rentals</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
             <li><a href="travel.html">Travel/Tourism</a></li>
             <li><a href="lodges.html">Lodges</a></li>
             <li><a href="events.html">Events</a></li>
@@ -30,10 +87,118 @@
         </ul>
     </nav>
 
+    <div class="pageTitle">
+        <h2>Equipment and Rentals</h2>
+    </div>
+
     <main>
-        <div>
-            <h1>Equipment Rental Page</h1>
-        </div>
+        <section id="left">
+            <p>
+                In the valley below Mount Olympus in the town of Litochoro, there is an outdoors store
+                called Olympus Hike where visitors can rent or purchase hiking equipment such as boots,
+                trekking poles, tents, etc.
+            </p>
+            <p>The table below shows the available rental items:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="6">Equipment Rental Prices</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="headers">
+                        <td>Item</td>
+                        <td>Rental Price</td>
+                        <td>Rentals Available</td>
+                    </tr>
+                    <tr id="rentals">
+                        <td>Hiking Boots</td>
+                        <td>$5 per day</td>
+                        <td>30 pair</td>
+                    </tr>
+                    <tr id="rentals">
+                        <td>Tent</td>
+                        <td>$25 per day</td>
+                        <td>10 tents</td>
+                    </tr>
+                    <tr id="rentals">
+                        <td>Trekking Pole</td>
+                        <td>$2 per day</td>
+                        <td>40 poles</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Here you can find items available for purchase at the store:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="6">Equipment Prices</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="headers">
+                        <td>Item</td>
+                        <td>Purchase Price</td>
+                        <td>Inventory</td>
+                    </tr>
+                    <tr id="purchase">
+                        <td>Hiking Boots</td>
+                        <td>$65</td>
+                        <td>45 pair</td>
+                    </tr>
+                    <tr id="purchase">
+                        <td>Tent</td>
+                        <td>$150</td>
+                        <td>20 tents</td>
+                    </tr>
+                    <tr id="purchase">
+                        <td>Trekking Pole</td>
+                        <td>$25</td>
+                        <td>75 poles</td>
+                    </tr>
+                    <tr id="purchase">
+                        <td>Guidebook</td>
+                        <td>$20</td>
+                        <td>24 books</td>
+                    </tr>
+                    <tr id="purchase">
+                        <td>Backpack</td>
+                        <td>$55</td>
+                        <td>17 backpacks</td>
+                    </tr>
+                    <tr id="purchase">
+                        <td>Sleeping Bag</td>
+                        <td>$32</td>
+                        <td>20 sleeping bags</td>
+                    </tr>
+                    <tr id="purchase">
+                        <td>Water Bottle</td>
+                        <td>$10</td>
+                        <td>30 water bottles</td>
+                    </tr>
+                    <tr id="purchase">
+                        <td>Coat</td>
+                        <td>$100</td>
+                        <td>12 jackets</td>
+                    </tr>
+                    <tr id="purchase">
+                        <td>Hat</td>
+                        <td>$3</td>
+                        <td>85 hats</td>
+                    </tr>
+                    <tr id="purchase">
+                        <td>Gloves</td>
+                        <td>$3</td>
+                        <td>75 pair</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="right">
+            <div>This is the right section!</div>
+        </section>
     </main>
 
     <footer>

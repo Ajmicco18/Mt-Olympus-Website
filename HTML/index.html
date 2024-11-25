@@ -6,6 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Home</title>
+    <style>
+        main {
+            display: flex;
+            width: 85%;
+            margin: auto;
+            align-items: stretch;
+        }
+
+        #left {
+            width: 75%;
+            margin: auto;
+            padding: 15px;
+            text-align: justify;
+            font-size: large;
+            color: white;
+        }
+
+        #left img {
+            max-width: 500px;
+            display: block;
+            margin: auto;
+        }
+
+        #right {
+            width: 25%;
+            margin: 0;
+            padding: 15px;
+        }
+
+        form {
+            width: 100%;
+            padding: 10px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: gray;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        form input[type="text"] {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: none;
+            background-color: white;
+            color: black;
+        }
+
+        #radio {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 15px;
+        }
+
+        form input[type="submit"] {
+            width: 60%;
+            margin: auto;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: brown;
+            color: white;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: white;
+            color: brown;
+        }
+
+        form h2,
+        p {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,9 +108,12 @@
         </ul>
     </nav>
 
-    <h2 id="h2Home">Welcome to the Official Mt. Olympus Website!</h2>
-    <main id="indexMain">
-        <section id="indexLeft">
+    <div class="pageTitle">
+        <h2>Welcome to the Official Mt. Olympus Website!</h2>
+    </div>
+
+    <main>
+        <section id="left">
             <img src="../Images/mount_olympus_home.png" alt="Mount Olympus">
             <p>
                 Welcome to Mount Olympus, the legendary peak where history, mythology, and adventure converge!
@@ -45,8 +125,8 @@
                 Check out our contact page for assistance or our FAQs for quick answers!
             </p>
         </section>
-        <section id="indexRight">
-            <form action="" onsubmit="submitNewsletter(event)" id="newsletterForm">
+        <section id="right">
+            <form action="" onsubmit="submitNewsletter(event)">
                 <h2>Join Our Newsletter!</h2>
                 <input type="text" id="email" placeholder="Enter your email">
                 <input type="text" id="phone" placeholder="Enter your phone number">
@@ -55,7 +135,7 @@
                     <label>Yes <input type="radio" name="decision" id="yes" value="yes"></label>
                     <label>No <input type="radio" name="decision" id="no" value="no" checked></label>
                 </div>
-                <input type="submit" name="" id="" value="Submit">
+                <input type="submit" value="Submit">
             </form>
         </section>
     </main>
