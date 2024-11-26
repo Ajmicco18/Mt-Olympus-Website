@@ -28,7 +28,6 @@ function submitNewsletter(e) {
 }
 
 /*****EQUIPMENT PAGE JS*****/
-
 function submitRentalRequest(e) {
     e.preventDefault();
 
@@ -61,3 +60,26 @@ function submitRentalRequest(e) {
         alert("Error! Please fill out all form items!")
     }
 }
+
+/*****CONTACT PAGE JS*****/
+function submitContact(e) {
+    e.preventDefault()
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+
+    if (name != "" && email != "" && phone != "") {
+        alert("Form submitted successfully!");
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("message").value = "";
+    }
+    else {
+        alert("Error! Please fill out all fields!")
+    }
+}
+
+

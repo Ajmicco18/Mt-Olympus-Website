@@ -6,6 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Contact</title>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            margin: auto;
+            color: white;
+            font-size: large;
+        }
+
+        #top {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #top p a {
+            text-decoration: none;
+            color: white;
+            font-style: italic;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #top p a:hover {
+            color: gray;
+        }
+
+        #bottom {
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+        }
+
+        #contact {
+            width: 75%;
+            padding: 15px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: gray;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: none;
+            margin: auto;
+            width: 90%;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            border: 1px solid lightgrey;
+            margin-bottom: 10px;
+            background-color: gainsboro;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,8 +91,39 @@
     </nav>
 
     <div class="pageTitle">
-        <h2>Contact Page</h2>
+        <h2>Contact Us!</h2>
     </div>
+
+    <main>
+        <div id="top">
+            <p>
+                To learn more about Mount Olympus and its history, trails, events or speak to an expert,
+                email <a href="">support@myolympus.org </a>, call <a href="">+30 210 123 4567</a>, or fill out the form
+                below and wait for a representative to reach out.
+            </p>
+        </div>
+        <div id="bottom">
+            <form action="" id="contact" onsubmit="submitContact(event)">
+                <h2>Your Details</h2>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="" id="name" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="" id="email" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="text" name="" id="phone" placeholder="Enter your phone number">
+                </div>
+                <textarea name="" id="message" placeholder="Enter your message"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <script src="../JS/index.js"></script>
 
     <footer>
         <p>Designed and Developed by Anthony Micco ©2024</p>

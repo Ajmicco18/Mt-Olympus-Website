@@ -62,30 +62,52 @@ form {
     flex-direction: column;
     background-color: gray;
     color: white;
-    box-sizing: border-box;
 }
 
-form input[type="text"] {
+input[type="text"] {
     width: 80%;
     margin: auto;
     margin-bottom: 15px;
+    box-sizing: border-box;
     padding: 5px;
+    border-radius: 5px;
     border: none;
     background-color: white;
     color: black;
+    font-size: 14px;
 }
 
-form input[type="submit"] {
+input[type="email"] {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+}
+
+input[type="submit"] {
     width: 60%;
     margin: auto;
+    box-sizing: border-box;
     padding: 5px;
     border: none;
     border-radius: 5px;
     background-color: brown;
     color: white;
+    cursor: pointer;
+    font-size: 14px;
 }
 
-form input[type="submit"]:hover {
+input:focus {
+    background-color: gainsboro;
+}
+
+input[type="submit"]:hover {
     background-color: white;
     color: brown;
 }

@@ -6,6 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Hiking</title>
+    <style>
+        main {
+            width: 85%;
+            margin: auto;
+            color: white;
+            padding: 10px;
+        }
+
+        #top {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            font-size: large;
+        }
+
+        #layout {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #column {
+            width: 30%;
+            margin: auto;
+            padding: 10px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+        #flip {
+            border: 2px solid black;
+            width: 80%;
+            margin: auto;
+            height: 200px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(20deg);
+        }
+
+        #flip img {
+            display: block;
+            max-width: 100%;
+            position: absolute;
+            transition: transform 1s ease;
+            backface-visibility: hidden;
+        }
+
+        #column h2 {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,6 +84,47 @@
     <div class="pageTitle">
         <h2>Hiking/Trails</h2>
     </div>
+
+    <main>
+        <div id="top">
+            <p>
+                Mount Olympus is one of the best locations in all of Greece to hike, with thousands
+                of visitors coming each year. No matter what your experience level, there is a trail for
+                everyone! Mount Olympus has three trails, each with a different level of difficulty from beginner
+                to experienced!
+            </p>
+        </div>
+
+        <div id="layout">
+            <section id="column">
+                <h2>Hermes' Path</h2>
+                <div id="flip">
+                    <div>
+                        <p>Easiest Path</p>
+                    </div>
+                    <img src="" alt="Hermes Path">
+                </div>
+            </section>
+            <section id="column">
+                <h2>Athena's Ascent</h2>
+                <div id="flip">
+                    <div>
+                        <p>Intermediate Path</p>
+                    </div>
+                    <img src="" alt="Athena's Ascent">
+                </div>
+            </section>
+            <section id="column">
+                <h2>Zeus' Challenge</h2>
+                <div id="flip">
+                    <div>
+                        <p>Intermediate Path</p>
+                    </div>
+                    <img src="" alt="Zeus' Challenge">
+                </div>
+            </section>
+        </div>
+    </main>
 
     <footer>
         <p>Designed and Developed by Anthony Micco ©2024</p>
