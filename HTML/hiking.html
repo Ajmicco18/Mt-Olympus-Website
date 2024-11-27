@@ -29,28 +29,71 @@
 
         #column {
             width: 30%;
+            height: 500px;
             margin: auto;
             padding: 10px;
             border: 2px solid gray;
             border-radius: 5px;
         }
 
-        #flip {
+        #flip-card {
             border: 2px solid black;
-            width: 80%;
-            margin: auto;
+            width: 85%;
             height: 200px;
-            position: relative;
-            transform-style: preserve-3d;
-            transform: rotateX(20deg);
+            perspective: 1000px;
+            margin: auto;
         }
 
-        #flip img {
-            display: block;
-            max-width: 100%;
+        #flip-card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        #front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #front,
+        #back {
+            width: 100%;
+            height: 100%;
             position: absolute;
             transition: transform 1s ease;
             backface-visibility: hidden;
+            top: 0;
+            left: 0;
+        }
+
+        #back {
+            background-color: gray;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotateY(180deg);
+        }
+
+        #flip-card:hover #flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        div ul {
+            list-style-type: square;
+            margin: 0;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        div ul li {
+            margin: 0;
+            padding: 10px;
+            color: white;
+            font-size: large;
         }
 
         #column h2 {
@@ -74,7 +117,7 @@
             <li><a href="hiking.html">Hiking/Trails</a></li>
             <li><a href="equipment.html">Equipment</a></li>
             <li><a href="travel.html">Travel/Tourism</a></li>
-            <li><a href="lodges.html">Lodges</a></li>
+            <li><a href="refuges.html">Refuges</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="faqs.html">FAQs</a></li>
@@ -98,29 +141,71 @@
         <div id="layout">
             <section id="column">
                 <h2>Hermes' Path</h2>
-                <div id="flip">
-                    <div>
-                        <p>Easiest Path</p>
+                <div id="flip-card">
+                    <div id="flip-card-inner">
+                        <div id="front">
+                            <img src="../Images/hermes_trail.png" alt="Hermes Path">
+                        </div>
+                        <div id="back">
+                            <ul>
+                                <li>Difficulty: Easy</li>
+                                <li>Max Elevation: 1773 meters</li>
+                            </ul>
+                        </div>
                     </div>
-                    <img src="" alt="Hermes Path">
+                </div>
+                <div>
+                    <ul>
+                        <li>Wide, smooth trail suitable for beginners</li>
+                        <li>Relaxing and peaceful atmosphere, perfect for leisurely hikes.</li>
+                        <li>Shortest trail, not reaching mountain peak</li>
+                    </ul>
                 </div>
             </section>
             <section id="column">
                 <h2>Athena's Ascent</h2>
-                <div id="flip">
-                    <div>
-                        <p>Intermediate Path</p>
+                <div id="flip-card">
+                    <div id="flip-card-inner">
+                        <div id="front">
+                            <img src="../Images/athena_trail.png" alt="Athena's Ascent">
+                        </div>
+                        <div id="back">
+                            <ul>
+                                <li>Difficulty: Medium</li>
+                                <li>Max Elevation: 2253 meters</li>
+                            </ul>
+                        </div>
                     </div>
-                    <img src="" alt="Athena's Ascent">
+                </div>
+                <div>
+                    <ul>
+                        <li>Ideal for intermediate hikers seeking a moderate challenge.</li>
+                        <li>Rocky, winding path with a steady incline.</li>
+                        <li>Longer trail, finishing just below the mountain's peak</li>
+                    </ul>
                 </div>
             </section>
             <section id="column">
                 <h2>Zeus' Challenge</h2>
-                <div id="flip">
-                    <div>
-                        <p>Intermediate Path</p>
+                <div id="flip-card">
+                    <div id="flip-card-inner">
+                        <div id="front">
+                            <img src="../Images/zeus_trail.png" alt="Zeus' Challenge">
+                        </div>
+                        <div id="back">
+                            <ul>
+                                <li>Difficulty: Hard</li>
+                                <li>Max Elevation: 2918 meters</li>
+                            </ul>
+                        </div>
                     </div>
-                    <img src="" alt="Zeus' Challenge">
+                </div>
+                <div>
+                    <ul>
+                        <li>Perfect for experienced hikers looking for an adventurous challenge.</li>
+                        <li>Steep, narrow path with jagged rocks and rugged terrain.</li>
+                        <li>Longest, most difficult trail, reaching the mountain's peak</li>
+                    </ul>
                 </div>
             </section>
         </div>
