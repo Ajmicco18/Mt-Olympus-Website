@@ -63,6 +63,7 @@ form {
     flex-direction: column;
     background-color: gray;
     color: white;
+    gap: 10px;
 }
 
 input[type="text"] {
