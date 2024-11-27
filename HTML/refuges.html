@@ -24,10 +24,36 @@
             display: flex;
             border: 2px solid black;
             border-radius: 5px;
+            gap: 20px;
+            color: black;
+        }
+
+        #row h2 {
+            color: black;
+            font-size: larger;
+            font-weight: bold;
         }
 
         #rowImg {
             width: 25%;
+            margin: auto;
+        }
+
+        #rowText {
+            width: 70%;
+            margin: auto;
+        }
+
+        #rowText a {
+            text-decoration: none;
+            color: black;
+            font-style: italic;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #rowText a:hover {
+            color: brown;
         }
 
         #row:nth-child(odd) {
@@ -55,13 +81,13 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="history.html">History</a></li>
             <li><a href="mythology.html">Mythology</a></li>
             <li><a href="hiking.html">Hiking/Trails</a></li>
             <li><a href="equipment.html">Equipment</a></li>
             <li><a href="travel.html">Travel/Tourism</a></li>
             <li><a href="refuges.html">Refuges</a></li>
             <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="faqs.html">FAQs</a></li>
         </ul>
@@ -76,32 +102,66 @@
             <div id=rowImg>
                 <img src="../Images/agapitos_refuge.png" alt="Agapitos Hut">
             </div>
-            <div>
-                <p>Agapitos Hut</p>
-            </div>
-        </section>
-        <section id="row">
-            <div id=rowImg>
-                <img src="../Images/apostolidis_refuge.png" alt="Apostolidis Refuge">
-            </div>
-            <div>
-                <p>Giosos Apostolidis Refuge</p>
+            <div id="rowText">
+                <h2>Spilios Agapitos Hut</h2>
+                <p>
+                    The Spilios Agapitos refuge is located in the Balkoni region,
+                    in the upper area of the Enipea valley. It is located at an altitude
+                    of 2,060 meters and on the main and busiest path of Olympus. The building
+                    was originally designed by the first president of E.O.S., Spilios Agapitos
+                    and was the only refuge in the mountain for many years. Completed in 1931,
+                    could the intial building could only house 25 people, but gradually expanded
+                    and improved to its current state which can house 110 people. For information
+                    and reservations contact <a href="">+30 2352081800</a>.
+                </p>
             </div>
         </section>
         <section id="row">
             <div id=rowImg>
                 <img src="../Images/petrostrouga_refuge.png" alt="Petrostruga Refuge">
             </div>
-            <div>
-                <p>Petrostruga Refuge</p>
+            <div id="rowText">
+                <h2>Petrostruga Refuge</h2>
+                <p>
+                    The Petrostruga refuge is built on the Petrostruga Pleateau,
+                    and has a beautiful view of the coast along the city of Litochoro
+                    below. It is located at an altitude of 1,940 meters. This stone shelter
+                    has three levels with an independent living area, kitchen and a dormitory.
+                    Additionally, a makeshift helipad was built nearby. This building can
+                    accommodate up to 74 people and is located at the intersection of multiple
+                    routes. For information or reservations contact <a href="">+30 6971773070</a>
+                </p>
+            </div>
+        </section>
+        <section id="row">
+            <div id=rowImg>
+                <img src="../Images/apostolidis_refuge.png" alt="Apostolidis Refuge">
+            </div>
+            <div id="rowText">
+                <h2>Giosos Apostolidis Refuge</h2>
+                <p>
+                    The Gioso Apostolidis Refuge is built between the peaks of Prophet Ilias
+                    and Toumba, in front of the Muses Plateau. It is located at an altitude of
+                    2,697 meters, which gives it the highest altitude of any other Greek shelter.
+                    It is a two-story stone building with its main feature being a large closed glass
+                    window. The building has an organized kitchen and can house 90 people. For information
+                    and reservations contact <a href="">+30 2351082840</a>.
+                </p>
             </div>
         </section>
         <section id="row">
             <div id=rowImg>
                 <img src="../Images/kakalos_refuge.png" alt="Kakalos Refuge">
             </div>
-            <div>
-                <p>Christos Kakalos Refuge</p>
+            <div id="rowText">
+                <h2>Christos Kakalos Refuge</h2>
+                <p>
+                    The Christos Kakalos refuge was built on the southeast edge of the
+                    Muses Plateau and is at an altitude of 2,640 meters. It is a vert small
+                    two-story building and has an organized kitchen and can accommodate up to
+                    17 people. It is only open from the end of May to the beginning of November.
+                    For information, contact <a href="">+30 2352100009</a>.
+                </p>
             </div>
         </section>
     </main>

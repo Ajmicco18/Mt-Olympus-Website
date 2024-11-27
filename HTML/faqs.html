@@ -6,6 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>FAQs</title>
+    <style>
+        main {
+            width: 85%;
+            padding: 10px;
+            margin: auto;
+            color: white;
+        }
+
+        #text {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            font-size: large;
+        }
+
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid gray;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            border-top: 1px solid #ddd;
+        }
+
+        .accordion-item:first-child {
+            border-top: none;
+        }
+
+        .accordion-header {
+            width: 100%;
+            padding: 15px;
+            text-align: left;
+            background: gray;
+            border: none;
+            outline: none;
+            font-size: large;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .accordion-header:hover {
+            background: white;
+            color: brown;
+        }
+
+        .accordion-content {
+            padding: 15px;
+            background-color: white;
+            color: brown;
+            display: none;
+            overflow: hidden;
+            font-size: medium;
+            line-height: 1.5;
+        }
+
+        .accordion-content.active {
+            display: block;
+        }
+
+        .accordion a {
+            text-decoration: none;
+            color: brown;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,13 +89,13 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="history.html">History</a></li>
             <li><a href="mythology.html">Mythology</a></li>
             <li><a href="hiking.html">Hiking/Trails</a></li>
             <li><a href="equipment.html">Equipment</a></li>
             <li><a href="travel.html">Travel/Tourism</a></li>
             <li><a href="refuges.html">Refuges</a></li>
             <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="faqs.html">FAQs</a></li>
         </ul>
@@ -33,6 +104,112 @@
     <div class="pageTitle">
         <h2>FAQs</h2>
     </div>
+
+    <main>
+        <div id="text">
+            <p>
+                Below are some of the frequently asked questions many people have asked regarding
+                various aspects of Mount Olympus including equipment, events, mythology, history
+                and accommodation
+            </p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Q: Are there any annual events held on Mount Olympus?</button>
+                <div class="accordion-content">
+                    <p>
+                        A: Yes, the "Olympus Marathon" is an annual event where
+                        participants run from the base of the mountain to its
+                        higher slopes, retracing ancient pilgrimage routes.
+                        Seasonal festivals celebrating Greek culture and mythology
+                        are also organized in nearby towns.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Q: How can I stay updated on events happening on Mount
+                    Olympus?</button>
+                <div class="accordion-content">
+                    <p>
+                        A: Visit the <a href="./events.html">events page</a> on the official Mount Olympus website
+                        or follow local event organizers on social media for the latest updates.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Q: Do I need a guide to hike Mount Olympus?</button>
+                <div class="accordion-content">
+                    <p>
+                        A: While many trails are well-marked, hiring a guide is recommended
+                        for first-time visitors or those attempting challenging routes like
+                        Zeus' Challenge, the mountain's highest peak.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Q: What is the best season for hiking Mount Olympus?</button>
+                <div class="accordion-content">
+                    <p>
+                        A: Late spring to early autumn (May to October) offers
+                        the best conditions, with clear trails and milder weather.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Q: Do I need to make a reservation for the refuges?</button>
+                <div class="accordion-content">
+                    <p>
+                        A: Yes, reservations are required, especially during the peak hiking season.
+                        <a href="./refuges.html">Contact the refuges</a> directly to secure a spot.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Q: What equipment do I need for hiking Mount Olympus?</button>
+                <div class="accordion-content">
+                    <p>
+                        A: Basic equipment includes sturdy hiking boots, weather-appropriate clothing,
+                        a backpack, water bottles, snacks, a map or GPS, and a first-aid kit.
+                        For higher altitudes, trekking poles and layers for colder weather are
+                        essential.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Q: Can I rent equipment near Mount Olympus?</button>
+                <div class="accordion-content">
+                    <p>
+                        A: Yes, gear rental shops such as <a href="./equipment.html">Olympus Hike</a> are available
+                        in towns like Litochoro, where you can find hiking boots, poles, and camping equipment.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Q: Are there any archaeological sites on Mount Olympus?</button>
+                <div class="accordion-content">
+                    <p>
+                        A: While the mountain itself is steeped in mythology,
+                        nearby archaeological sites like the ancient city of
+                        Dion provide a historical context to its cultural
+                        importance.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Q: Why is Mount Olympus significant in Greek mythology?</button>
+                <div class="accordion-content">
+                    <p>
+                        A: Mount Olympus is considered the mythical home of the 12
+                        Olympian gods, including Zeus, Hera, and Athena. It is described
+                        in Greek myths as a majestic and serene dwelling above the clouds.
+                        Visit the <a href="./mythology.html">Mythology</a> page to learn more!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../JS/index.js"></script>
 
     <footer>
         <p>Designed and Developed by Anthony Micco ©2024</p>

@@ -82,4 +82,26 @@ function submitContact(e) {
     }
 }
 
+/*****FAQ PAGE JS*****/
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+
+        const isActive = content.classList.contains('active');
+
+        document.querySelectorAll('.accordion-content').forEach(panel => {
+            panel.classList.remove('active');
+            panel.style.maxHeight = null;
+        });
+
+        if (!isActive) {
+            content.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+    });
+});
+
+
 
