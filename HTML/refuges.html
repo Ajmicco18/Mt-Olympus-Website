@@ -6,6 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Lodging</title>
+    <style>
+        main {
+            width: 85%;
+            margin: auto;
+            color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #row {
+            width: 100%;
+            padding: 10px;
+            margin: auto;
+            display: flex;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        #row:nth-child(odd) {
+            background-color: gray;
+        }
+
+        #row:nth-child(even) {
+            background-color: gainsboro;
+        }
+
+        #row div img {
+            width: 200px;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,6 +64,41 @@
     <div class="pageTitle">
         <h2>Refuges</h2>
     </div>
+
+    <main>
+        <section id="row">
+            <div>
+                <img src="../Images/agapitos_refuge.png" alt="Agapitos Hut">
+            </div>
+            <div>
+                <p>Agapitos Hut</p>
+            </div>
+        </section>
+        <section id="row">
+            <div>
+                <p>Giosos Apostolidis Refuge</p>
+            </div>
+            <div>
+                <img src="../Images/apostolidis_refuge.png" alt="Apostolidis Refuge">
+            </div>
+        </section>
+        <section id="row">
+            <div>
+                <img src="../Images/petrostrouga_refuge.png" alt="Petrostruga Refuge">
+            </div>
+            <div>
+                <p>Petrostruga Refuge</p>
+            </div>
+        </section>
+        <section id="row">
+            <div>
+                <p>Christos Kakalos Refuge</p>
+            </div>
+            <div>
+                <img src="../Images/kakalos_refuge.png" alt="Kakalos Refuge">
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>Designed and Developed by Anthony Micco ©2024</p>
