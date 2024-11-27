@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Hiking</title>
+    <style>
+        main {
+            width: 85%;
+            margin: auto;
+            color: white;
+            padding: 10px;
+        }
+
+        #top {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            font-size: large;
+        }
+
+        #layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        #column {
+            width: 30%;
+            height: 500px;
+            margin: auto;
+            padding: 10px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+        #flip-card {
+            border: 2px solid gray;
+            width: 85%;
+            height: 200px;
+            perspective: 1000px;
+            margin: auto;
+        }
+
+        #flip-card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        #front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #front,
+        #back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: transform 1s ease;
+            backface-visibility: hidden;
+            top: 0;
+            left: 0;
+        }
+
+        #back {
+            background-color: gray;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotateY(180deg);
+        }
+
+        #flip-card:hover #flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        div ul {
+            list-style-type: square;
+            margin: 0;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        div ul li {
+            margin: 0;
+            padding: 10px;
+            color: white;
+            font-size: large;
+        }
+
+        #column h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../Images/mountain-header.png" alt="Mountain">
+        <h1>Mount Olympus</h1>
+        <img src="../Images/mountain-header.png" alt="Mountain">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mythology.html">Mythology</a></li>
+            <li><a href="trails.html">Trails</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="tourism.html">Tourism</a></li>
+            <li><a href="refuges.html">Refuges</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+    </nav>
+
+    <div class="pageTitle">
+        <h2>Trails</h2>
+    </div>
+
+    <main>
+        <div id="top">
+            <p>
+                Mount Olympus is one of the best locations in all of Greece to hike, with thousands
+                of visitors coming each year. No matter what your experience level, there is a trail for
+                everyone! Mount Olympus has three trails, each with a different level of difficulty from beginner
+                to experienced!
+            </p>
+        </div>
+
+        <div id="layout">
+            <section id="column">
+                <h2>Hermes' Path</h2>
+                <div id="flip-card">
+                    <div id="flip-card-inner">
+                        <div id="front">
+                            <img src="../Images/hermes_trail.png" alt="Hermes Path">
+                        </div>
+                        <div id="back">
+                            <ul>
+                                <li>Difficulty: Easy</li>
+                                <li>Max Elevation: 1773 meters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li>Wide, smooth trail suitable for beginners</li>
+                        <li>Relaxing and peaceful atmosphere, perfect for leisurely hikes.</li>
+                        <li>Shortest trail, not reaching mountain peak</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="column">
+                <h2>Athena's Ascent</h2>
+                <div id="flip-card">
+                    <div id="flip-card-inner">
+                        <div id="front">
+                            <img src="../Images/athena_trail.png" alt="Athena's Ascent">
+                        </div>
+                        <div id="back">
+                            <ul>
+                                <li>Difficulty: Medium</li>
+                                <li>Max Elevation: 2253 meters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li>Ideal for intermediate hikers seeking a moderate challenge.</li>
+                        <li>Rocky, winding path with a steady incline.</li>
+                        <li>Longer trail, finishing at the mountain's plateau</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="column">
+                <h2>Zeus' Challenge</h2>
+                <div id="flip-card">
+                    <div id="flip-card-inner">
+                        <div id="front">
+                            <img src="../Images/zeus_trail.png" alt="Zeus' Challenge">
+                        </div>
+                        <div id="back">
+                            <ul>
+                                <li>Difficulty: Hard</li>
+                                <li>Max Elevation: 2918 meters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li>Perfect for experienced hikers looking for an adventurous challenge.</li>
+                        <li>Steep, narrow path with jagged rocks and rugged terrain.</li>
+                        <li>Longest, most difficult trail, reaching the mountain's peak</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Designed and Developed by Anthony Micco ©2024</p>
+    </footer>
+
+</body>
+
+</html>
