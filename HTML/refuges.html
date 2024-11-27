@@ -25,6 +25,10 @@
             border-radius: 5px;
         }
 
+        #rowImg {
+            width: 25%;
+        }
+
         #row:nth-child(odd) {
             background-color: gray;
         }
@@ -34,7 +38,8 @@
         }
 
         #row div img {
-            width: 200px;
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -67,7 +72,7 @@
 
     <main>
         <section id="row">
-            <div>
+            <div id=rowImg>
                 <img src="../Images/agapitos_refuge.png" alt="Agapitos Hut">
             </div>
             <div>
@@ -75,15 +80,15 @@
             </div>
         </section>
         <section id="row">
+            <div id=rowImg>
+                <img src="../Images/apostolidis_refuge.png" alt="Apostolidis Refuge">
+            </div>
             <div>
                 <p>Giosos Apostolidis Refuge</p>
             </div>
-            <div>
-                <img src="../Images/apostolidis_refuge.png" alt="Apostolidis Refuge">
-            </div>
         </section>
         <section id="row">
-            <div>
+            <div id=rowImg>
                 <img src="../Images/petrostrouga_refuge.png" alt="Petrostruga Refuge">
             </div>
             <div>
@@ -91,11 +96,11 @@
             </div>
         </section>
         <section id="row">
-            <div>
-                <p>Christos Kakalos Refuge</p>
+            <div id=rowImg>
+                <img src="../Images/kakalos_refuge.png" alt="Kakalos Refuge">
             </div>
             <div>
-                <img src="../Images/kakalos_refuge.png" alt="Kakalos Refuge">
+                <p>Christos Kakalos Refuge</p>
             </div>
         </section>
     </main>
