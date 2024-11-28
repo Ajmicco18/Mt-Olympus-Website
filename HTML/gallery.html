@@ -7,9 +7,50 @@
     <link rel="stylesheet" href="../styles.css">
     <title>About</title>
     <style>
+        main {
+            width: 85%;
+            padding: 10px;
+            margin: auto;
+            color: white;
+        }
+
+        #text {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            font-size: large;
+        }
+
+        #row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            gap: 10px;
+        }
+
+        #box {
+            width: 45%;
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        #media {
+            width: 100%;
+            height: 200px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            margin: auto;
+        }
+
         img,
         video {
-            width: 300px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -41,19 +82,63 @@
     </div>
 
     <main>
-        <p>Here you can find breathtaking images and videos taken on Mount Olympus!</p>
-        <img src="../Images/olympus-1.png" alt="Olympus View">
-        <img src="../Images/olympus-2.png" alt="Olympus View">
-        <img src="../Images/olympus-3.png" alt="Olympus Path">
-        <video controls>
-            <source src="../Images/olympus-vid-1.MP4" type="video/mp4">
-        </video>
-        <img src="../Images/olympus-4.png" alt="Sunrise at Refuge">
-        <img src="../Images/olympus-5.png" alt="View from Top">
-        <img src="../Images/olympus-6.png" alt="View of Valley">
-        <video controls>
-            <source src="../Images/olympus-vid-2.MP4" type="video/mp4">
-        </video>
+        <div id="text">
+            <p>Here you can find breathtaking images and videos taken on Mount Olympus!</p>
+        </div>
+        <div id="row">
+            <div id="box">
+                <div id="media">
+                    <img src="../Images/olympus-1.png" alt="Olympus View">
+                </div>
+                <p>Moon-rise over an Olympus peak</p>
+            </div>
+            <div id="box">
+                <div id="media">
+                    <img src="../Images/olympus-2.png" alt="Olympus View">
+                </div>
+                <p>View of the alpine zone of Mount Olympus</p>
+            </div>
+            <div id="box">
+                <div id="media">
+                    <video controls>
+                        <source src="../Images/olympus-vid-1.MP4" type="video/mp4">
+                    </video>
+                </div>
+                <p>Video of Athena's Ascent trail</p>
+            </div>
+            <div id="box">
+                <div id="media">
+                    <img src="../Images/olympus-3.png" alt="Olympus Path">
+                </div>
+                <p>View of valley below Mount Olympus</p>
+            </div>
+            <div id="box">
+                <div id="media">
+                    <img src="../Images/olympus-4.png" alt="Sunrise at Refuge">
+                </div>
+                <p>Sunrise view at Spilios Agapitos refuge</p>
+            </div>
+            <div id="box">
+                <div id="media">
+                    <img src="../Images/olympus-5.png" alt="View from Top">
+                </div>
+                <p>View of Olympus peak from Muses Plateau</p>
+            </div>
+            <div id="box">
+                <div id="media">
+                    <img src="../Images/olympus-6.png" alt="View of Valley">
+                </div>
+                <p>View of nearby sea from high altitude trail</p>
+            </div>
+            <div id="box">
+                <div id="media">
+                    <video controls>
+                        <source src="../Images/olympus-vid-2.MP4" type="video/mp4">
+                    </video>
+                </div>
+                <p>Video of border between apline zone and forest</p>
+            </div>
+        </div>
     </main>
 
     <footer>
