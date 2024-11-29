@@ -15,11 +15,13 @@ body {
 
 .navbar-brand {
     color: brown;
+    font-size: x-large;
 }
 
 .nav-link {
     color: white;
     border-radius: 5px;
+    font-size: large;
 }
 
 .nav-link:hover {
