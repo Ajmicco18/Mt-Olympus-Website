@@ -7,6 +7,47 @@
     <link rel="stylesheet" href="../styles.css">
     <title>Tourism</title>
     <style>
+        main {
+            width: 85%;
+            padding: 10px;
+            margin: auto;
+            color: white;
+
+        }
+
+        #attraction-container {
+            margin: auto;
+            width: 85%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .attraction {
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 5%;
+            opacity: 0.6;
+            height: 500px;
+        }
+
+        #text {
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        .attraction a {
+            text-decoration: none;
+            color: black;
+            font-style: italic;
+            cursor: pointer;
+        }
+
         p {
             line-height: 1.5em;
         }
@@ -40,65 +81,11 @@
     </div>
 
     <main>
-        <div>
-            <p>Mount Olympus National Park</p>
-            <p>
-                A UNESCO Biosphere Reserve, this park offers stunning biodiversity,
-                hiking trails,and scenic views. It's home to diverse flora and
-                fauna, including endemic species.
-            </p>
-            <a href="https://www.google.com/maps/dir//Mount+Olympus+National+Park">Directions</a>
+        <div id="attraction-container">
+
         </div>
 
-        <div>
-            <p>The Muses Plateau</p>
-            <p>
-                Named after the nine Muses of Greek mythology, this plateau offers
-                breathtaking views and is an ideal spot for hiking. The landscape
-                is dotted with alpine meadows and ancient stone paths.
-            </p>
-            <a href="https://www.google.com/maps/dir//Unnamed+Road,+Litochoro+602+00/">Directions</a>
-
-            <div>
-                <p>The Ancient City of Dion</p>
-                <p>
-                    An archaeological site and ancient Greek city dedicated to Zeus,
-                    Dion was a major religious center. The ruins include temples,
-                    a theater, and sanctuaries. It also houses a museum displaying
-                    artifacts.
-                </p>
-                <a href="https://www.google.com/maps/dir//Dion+601+00/@40.1738794,22.4090548,12z/">Directions</a>
-            </div>
-
-            <div>
-                <p>Litochoro</p>
-                <p>
-                    A town at the foot of Mount Olympus known as the "Gateway to Olympus,"
-                    Litochoro is a charming town with a rich history. It's a base for hikers
-                    and offers access to the mountain's trails, plus local tavernas and shops.
-                </p>
-                <a href="https://www.google.com/maps/dir//Litochoro,+602+00/@40.1030494,22.4202095,12z/">Directions</a>
-            </div>
-
-            <div>
-                <p>Olympus Ski Resort</p>
-                <p>
-                    A popular winter destination offering skiing, snowboarding, and snowshoeing
-                    in the winter months, along with hiking in summer. It provides spectacular
-                    views of the mountain and surrounding area.
-                </p>
-                <a href="https://www.google.com/maps/dir//Elassona+402+00/@40.0421366,22.259119,12z/">Directions</a>
-            </div>
-
-            <div>
-                <p>The Monastery of St. Dionysios</p>
-                <p>
-                    This monastery is dedicated to Saint Dionysios, the patron saint of Mount Olympus.
-                    It is perched on a cliff and offers peaceful surroundings, with impressive
-                    Byzantine architecture and historical significance.
-                </p>
-                <a href="https://www.google.com/maps/dir//Litochoro+602+00/@40.1182808,22.4022891,12z/">Directions</a>
-            </div>
+        <script src="../JS/index.js"></script>
     </main>
 
     <footer>
