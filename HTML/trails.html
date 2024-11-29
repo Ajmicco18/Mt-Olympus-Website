@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <title>Trails</title>
     <style>
         main {
@@ -30,7 +35,7 @@
 
         #column {
             width: 30%;
-            height: 500px;
+            height: 600px;
             margin: auto;
             padding: 10px;
             border: 2px solid gray;
@@ -83,14 +88,14 @@
             transform: rotateY(180deg);
         }
 
-        div ul {
+        div #descr {
             list-style-type: square;
             margin: 0;
             justify-content: center;
             padding: 20px;
         }
 
-        div ul li {
+        div #descr li {
             margin: 0;
             padding: 10px;
             color: white;
@@ -104,25 +109,52 @@
 </head>
 
 <body>
-    <header>
-        <img src="../Images/mountain-header.png" alt="Mountain">
-        <h1>Mount Olympus</h1>
-        <img src="../Images/mountain-header.png" alt="Mountain">
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="mythology.html">Mythology</a></li>
-            <li><a href="trails.html">Trails</a></li>
-            <li><a href="equipment.html">Equipment</a></li>
-            <li><a href="tourism.html">Tourism</a></li>
-            <li><a href="refuges.html">Refuges</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../Images/mountain-header.png" alt="Olympus Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Mount Olympus
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mythology.html">Mythology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./equipment.html">Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./trails.html">Trails</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tourism.html">Tourism</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./refuges.html">Refuges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./faqs.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <div class="pageTitle">
@@ -148,7 +180,7 @@
                             <img src="../Images/hermes_trail.png" alt="Hermes Path">
                         </div>
                         <div id="back">
-                            <ul>
+                            <ul id="descr">
                                 <li>Difficulty: Easy</li>
                                 <li>Max Elevation: 1773 meters</li>
                             </ul>
@@ -156,7 +188,7 @@
                     </div>
                 </div>
                 <div>
-                    <ul>
+                    <ul id="descr">
                         <li>Wide, smooth trail suitable for beginners</li>
                         <li>Relaxing and peaceful atmosphere, perfect for leisurely hikes.</li>
                         <li>Shortest trail, not reaching mountain peak</li>
@@ -171,7 +203,7 @@
                             <img src="../Images/athena_trail.png" alt="Athena's Ascent">
                         </div>
                         <div id="back">
-                            <ul>
+                            <ul id="descr">
                                 <li>Difficulty: Medium</li>
                                 <li>Max Elevation: 2253 meters</li>
                             </ul>
@@ -179,7 +211,7 @@
                     </div>
                 </div>
                 <div>
-                    <ul>
+                    <ul id="descr">
                         <li>Ideal for intermediate hikers seeking a moderate challenge.</li>
                         <li>Rocky, winding path with a steady incline.</li>
                         <li>Longer trail, finishing at the mountain's plateau</li>
@@ -194,7 +226,7 @@
                             <img src="../Images/zeus_trail.png" alt="Zeus' Challenge">
                         </div>
                         <div id="back">
-                            <ul>
+                            <ul id="descr">
                                 <li>Difficulty: Hard</li>
                                 <li>Max Elevation: 2918 meters</li>
                             </ul>
@@ -202,7 +234,7 @@
                     </div>
                 </div>
                 <div>
-                    <ul>
+                    <ul id="descr">
                         <li>Perfect for experienced hikers looking for an adventurous challenge.</li>
                         <li>Steep, narrow path with jagged rocks and rugged terrain.</li>
                         <li>Longest, most difficult trail, reaching the mountain's peak</li>
