@@ -71,7 +71,19 @@
 
         #row div img {
             width: 100%;
-            height: auto;
+            height: 200px;
+        }
+
+        @media only screen and (max-width: 725px) {
+            #row {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            #rowImg {
+                width: 80%;
+            }
         }
     </style>
 </head>
