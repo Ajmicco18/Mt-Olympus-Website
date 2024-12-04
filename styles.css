@@ -48,6 +48,7 @@ footer {
     font-size: large;
     font-weight: bold;
     position: static;
+    bottom: 0;
 }
 
 .pageTitle {
@@ -64,6 +65,7 @@ form {
     background-color: gray;
     color: white;
     gap: 10px;
+    border: 2px solid black;
 }
 
 input[type="text"] {

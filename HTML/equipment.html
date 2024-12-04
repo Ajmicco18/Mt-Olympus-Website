@@ -15,7 +15,6 @@
         main {
             width: 85%;
             margin: auto;
-            text-align: justify;
             font-size: large;
             color: white;
         }
@@ -34,6 +33,7 @@
             color: white;
             font-size: large;
             line-height: 1.5em;
+            text-align: center;
         }
 
         table {
@@ -119,6 +119,26 @@
 
         form h2 {
             text-align: center;
+        }
+
+        @media only screen and (max-width: 925px) {
+            #columns {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            #left {
+                width: 100%;
+            }
+
+            #right {
+                width: 100%;
+            }
+
+            #table {
+                width: 100%;
+            }
         }
     </style>
 </head>
