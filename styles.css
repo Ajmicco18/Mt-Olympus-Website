@@ -5,7 +5,7 @@ body {
 }
 
 .container-fluid {
-    background-color: gray;
+    background-image: radial-gradient(white, gray);
     padding: 20px;
 }
 
@@ -31,25 +31,27 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color: brown;
+    font-weight: 600;
     border-radius: 5px;
     font-size: large;
 }
 
 .nav-link:hover {
-    color: brown;
-    background-color: white;
+    color: white;
+    background-color: gray;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+    transition: 0.5s;
 }
 
 footer {
     text-align: center;
-    background-color: gray;
+    background-image: radial-gradient(white, gray);
     width: 100%;
     margin: auto;
     padding: 10px;
-    color: white;
+    color: brown;
     font-size: large;
     font-weight: bold;
     position: static;
@@ -70,8 +72,9 @@ form {
     margin: auto;
     display: flex;
     flex-direction: column;
-    background-color: gray;
-    color: white;
+    background-image: linear-gradient(to left bottom, gray, white);
+    color: brown;
+    font-weight: bold;
     gap: 10px;
     border: 2px solid black;
     border-radius: 10px;
@@ -126,6 +129,6 @@ textarea:focus {
 }
 
 input[type="submit"]:hover {
-    background-color: white;
-    color: brown;
+    background-color: gray;
+    color: white;
 }
