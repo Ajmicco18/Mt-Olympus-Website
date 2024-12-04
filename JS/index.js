@@ -129,13 +129,14 @@ attractions.forEach((attraction) => {
 
 function addAttraction(attraction) {
     let html = `
-    <div class = "attraction" id="attraction-${attraction.id}" style="background-image: url(${attraction.imageURL})">
-        <div id="text">
-            <h3>${attraction.name}</h3>
-            <p>${attraction.descr}</p>
-            <a href="${attraction.locationURL}">Directions</a> 
-        </div>
-    </div>`
+        <div class="card" id="attraction-${attraction.id}">
+            <img src="${attraction.imageURL}" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">${attraction.name}</h5>
+                <p class="card-text">${attraction.descr}</p>
+                <a href="${attraction.locationURL}" class="btn btn-primary">Directions</a>
+            </div>
+        </div>`
 
     //insertAdjacentHTML gets two arguments: First is the position, second is HTML
     //The four possible positions are: "beforeBegin", "afterBegin", "beforeEnd", "afterEnd"
