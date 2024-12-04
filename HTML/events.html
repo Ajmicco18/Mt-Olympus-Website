@@ -32,14 +32,15 @@
             width: 30%;
             justify-content: center;
             align-items: center;
+            box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
         }
 
         #image img {
             width: 100%;
+            height: 200px;
             display: block;
             margin-left: 0;
             margin-right: 0;
-            border: 2px solid gray;
             border-radius: 5px;
         }
 
@@ -48,17 +49,46 @@
             justify-content: center;
             align-items: center;
             line-height: 1.5em;
+            color: black;
+            font-weight: 600;
         }
 
         #text a {
             text-decoration: none;
             font-style: italic;
-            color: white;
+            color: black;
             cursor: pointer;
         }
 
         #text a:hover {
-            color: gray;
+            color: white;
+        }
+
+        h3,
+        h4 {
+            color: white;
+            font-weight: bold;
+        }
+
+        hr {
+            border: 2px solid black;
+        }
+
+        @media only screen and (max-width: 725px) {
+
+            #row {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            #image {
+                width: 80%;
+            }
+
+            #text {
+                width: 100%;
+            }
         }
     </style>
 </head>

@@ -27,31 +27,12 @@
             font-size: large;
         }
 
-        #row {
+        .carousel-item {
             width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            margin: auto;
-            gap: 10px;
+            height: 500px;
         }
 
-        #box {
-            width: 45%;
-            margin: auto;
-            text-align: center;
-            color: white;
-            font-weight: bold;
-        }
-
-        #media {
-            width: 100%;
-            height: 200px;
-            border: 2px solid gray;
-            border-radius: 5px;
-            margin: auto;
-        }
-
-        #image,
+        img,
         video {
             width: 100%;
             height: 100%;
@@ -117,59 +98,89 @@
         <div id="text">
             <p>Here you can find breathtaking images and videos taken on Mount Olympus!</p>
         </div>
-        <div id="row">
-            <div id="box">
-                <div id="media">
-                    <img src="../Images/olympus-1.png" alt="Olympus View" id="image">
-                </div>
-                <p>Moon-rise over an Olympus peak</p>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
             </div>
-            <div id="box">
-                <div id="media">
-                    <img src="../Images/olympus-2.png" alt="Olympus View" id="image">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Images/olympus-1.png" class="d-block w-100" alt="Olympus View">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Moon-rise over an Olympus peak</h5>
+                    </div>
                 </div>
-                <p>View of the alpine zone of Mount Olympus</p>
-            </div>
-            <div id="box">
-                <div id="media">
-                    <video controls>
+                <div class="carousel-item">
+                    <img src="../Images/olympus-2.png" class="d-block w-100" alt="Olympus View">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>View of the alpine zone of Mount Olympus</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video controls class="d-block w-100">
                         <source src="../Images/olympus-vid-1.MP4" type="video/mp4">
                     </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Video of Athena's Ascent trail</h5>
+                    </div>
                 </div>
-                <p>Video of Athena's Ascent trail</p>
-            </div>
-            <div id="box">
-                <div id="media">
-                    <img src="../Images/olympus-3.png" alt="Olympus Path" id="image">
+                <div class="carousel-item">
+                    <img src="../Images/olympus-3.png" class="d-block w-100" alt="Olympus Path">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>View of valley below Mount Olympus</h5>
+                    </div>
                 </div>
-                <p>View of valley below Mount Olympus</p>
-            </div>
-            <div id="box">
-                <div id="media">
-                    <img src="../Images/olympus-4.png" alt="Sunrise at Refuge" id="image">
+                <div class="carousel-item">
+                    <img src="../Images/olympus-4.png" class="d-block w-100" alt="Sunrise at Refuge">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Sunrise view at Spilios Agapitos refuge</h5>
+                    </div>
                 </div>
-                <p>Sunrise view at Spilios Agapitos refuge</p>
-            </div>
-            <div id="box">
-                <div id="media">
-                    <img src="../Images/olympus-5.png" alt="View from Top" id="image">
+                <div class="carousel-item">
+                    <img src="../Images/olympus-5.png" class="d-block w-100" alt="View from Top">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>View of Olympus peak from Muses Plateau</h5>
+                    </div>
                 </div>
-                <p>View of Olympus peak from Muses Plateau</p>
-            </div>
-            <div id="box">
-                <div id="media">
-                    <img src="../Images/olympus-6.png" alt="View of Valley" id="image">
+                <div class="carousel-item">
+                    <img src="../Images/olympus-6.png" class="d-block w-100" alt="View of Valley">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>View of nearby sea from high altitude trail</h5>
+                    </div>
                 </div>
-                <p>View of nearby sea from high altitude trail</p>
-            </div>
-            <div id="box">
-                <div id="media">
-                    <video controls>
+                <div class="carousel-item">
+                    <video controls class="d-block w-100">
                         <source src="../Images/olympus-vid-2.MP4" type="video/mp4">
                     </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Video of border between apline zone and forest</h5>
+                    </div>
                 </div>
-                <p>Video of border between apline zone and forest</p>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </main>
 

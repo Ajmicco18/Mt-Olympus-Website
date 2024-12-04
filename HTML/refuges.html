@@ -19,7 +19,7 @@
             padding: 10px;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 30px;
         }
 
         #row {
@@ -31,6 +31,7 @@
             border-radius: 5px;
             gap: 20px;
             color: black;
+            box-shadow: 8px 8px black;
         }
 
         #row h2 {
@@ -59,15 +60,15 @@
         }
 
         #rowText a:hover {
-            color: brown;
+            color: white;
         }
 
         #row:nth-child(odd) {
-            background-color: gray;
+            background-color: brown;
         }
 
         #row:nth-child(even) {
-            background-color: gainsboro;
+            background-image: radial-gradient(white, gray);
         }
 
         #rowImg img {
@@ -76,6 +77,16 @@
             border-radius: 50%;
             box-shadow: 0 4px 8px 0 brown, 0 6px 20px 0 brown;
         }
+
+        #row:nth-child(odd) img {
+            box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+        }
+
+        #row:nth-child(even) img {
+            box-shadow: 0 4px 8px 0 brown, 0 6px 20px 0 brown;
+        }
+
+
 
         @media only screen and (max-width: 725px) {
             #row {
